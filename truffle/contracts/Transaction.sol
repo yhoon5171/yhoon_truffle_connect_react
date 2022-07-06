@@ -29,7 +29,7 @@ contract Transaction {
     }
 
     //view all the transactions of the user
-    function updateAllTransactions() view external returns(transaction[] memory){
+    function getAllTransactions() view external returns(transaction[] memory){
         return allTransactions[msg.sender];
     }
 

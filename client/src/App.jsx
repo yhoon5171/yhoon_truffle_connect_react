@@ -103,7 +103,7 @@ class App extends Component {
       if (!error){
         transaction.deployed().then(instance => {
           this.setState({transactionInstance: instance, account: accounts[0]});
-          this.updateAllTransactions();
+          //this.updateAllTransactions();
         })
       }
     })
@@ -121,11 +121,11 @@ class App extends Component {
   }
 
   //ttype에다가 일단 transaction 정보 다 넣기
-  updateAllTransactions() {
-    this.state.transactionInstance.updateAllTransactions.then(result => {
-      this.setState ({ttype: result})
-    })
-  }
+  // updateAllTransactions() {
+  //   this.state.transactionInstance.getAllTransactions.then(result => {
+  //     this.setState ({ttype: result})
+  //   })
+  // }
 
   // render() {
   //   return (
