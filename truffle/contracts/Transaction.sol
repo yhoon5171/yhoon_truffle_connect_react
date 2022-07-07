@@ -19,7 +19,7 @@ contract Transaction {
     mapping (address=>uint16) transaction_cnt;
 
     //send the transaction
-    function sendTransaction() payable external {
+    function sendTrans() payable external {
         //inserts transaction information
         transaction memory newTransaction = transaction("cctv", "KimYoungHoon", block.timestamp, "1234asdf", "KimJungHyun", "JoHyungWoo", ".avi", "it is a cctv video in MCNL Lab");
         //count the number of transactions sent
